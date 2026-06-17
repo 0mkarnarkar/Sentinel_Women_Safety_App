@@ -11,7 +11,7 @@ import { activateKeepAwakeAsync, deactivateKeepAwake } from 'expo-keep-awake';
 const SCREEN_WIDTH = Dimensions.get('window').width;
 
 // ⚠️ IMPORTANT: Verify this is your laptop's current IP address!
-const BACKEND_URL = 'http://192.168.29.191:8000'; 
+const BACKEND_URL = 'http://<replace with your laptops current IP address>:8000'; 
 
 Notifications.setNotificationHandler({
   handleNotification: async () => ({ shouldShowBanner: true, shouldShowList: true, shouldPlaySound: true, shouldSetBadge: true }),
